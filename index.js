@@ -122,3 +122,12 @@ function isValidMove(board, row, col, num) {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
+document.getElementById('help').addEventListener('mouseover', function() {
+    document.querySelector('.help-div').style.display = 'block';
+});
+
+document.getElementById('help').addEventListener('mouseout', function() {
+    document.querySelector('.help-div').style.display = 'none';
+});

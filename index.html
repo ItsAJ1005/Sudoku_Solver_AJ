@@ -11,20 +11,23 @@
 
     <!-- header -->
     <header>
-        <nav class="navbar ">
+        <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand">Sudoku Solver - AJ</a>              
-
-              <!-- button right -->
-              <div class="btn-group " role="group" aria-label="Button group with nested dropdown">
-                <button type="button" class="btn m-0"> Help </button>
-                <button type="button" class="btn m-0"> More </button>
-              </div>
-
-
+                <a class="navbar-brand">Sudoku Solver - AJ</a>
+                <!-- button right -->
+                <div class="btn-group" role="group" aria-label="Button group">
+                    <button id="help" type="button" class="btn btn-secondary m-0" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+                        Help
+                    </button>
+                    <button type="button" class="btn m-0"> More </button>
+                </div>
             </div>
-          </nav>
+        </nav>
+        <div class="help-div">
+            Click on the cell for which you have the data and enter your number
+        </div>
     </header>
+    
 
     <!-- main solver -->
     <main>
@@ -82,6 +85,10 @@
 
     </div>
 
+    <div class="disqus-wrapper">
+        <div id="disqus_thread"></div>
+    </div>
+
     <div class="footer">
         <div class="name">
             Sudoku Solver
@@ -92,8 +99,29 @@
         </div>
     </div>
 
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sudokusolveraj.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
     <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

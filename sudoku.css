@@ -29,6 +29,26 @@ main {
     border-bottom: 0.7px solid rgb(219, 215, 215);
 }
 
+
+.help-div {
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    height: 12vh;
+    width: 14vw;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px;
+    background: #ccf3d5;
+    display: none;
+}
+
+/* Show .help-div when #help is hovered */
+#help:hover + .help-div {
+    display: block;
+}
+
+
 h1{
     font-weight: 500;
 }
@@ -138,6 +158,12 @@ li{
     background: #c5f5c8;
     border-radius: 20px;
     margin: 2vh;
+}
+
+.disqus-wrapper {
+    margin-top: 6vh;
+    margin-inline: 11vw;
+    width: 80vw;
 }
 
 .footer {
