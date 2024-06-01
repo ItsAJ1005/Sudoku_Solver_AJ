@@ -13,6 +13,7 @@ body{
     font-family: "graphikmedium";
     background: #f1faf1;
     height: 100vh;
+
 }
 
 main {
@@ -29,6 +30,13 @@ main {
     border-bottom: 0.7px solid rgb(219, 215, 215);
 }
 
+
+
+.middle 
+{
+    display: flex;
+    gap:10vw;
+}
 
 .help-div {
     position: absolute;
